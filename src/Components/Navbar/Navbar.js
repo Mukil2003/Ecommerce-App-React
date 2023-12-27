@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../Assets/logo.png";
 import cart_logo from "../Assets/cart_icon.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   let [menu, setMenu] = useState("shop");
@@ -19,34 +20,53 @@ function Navbar() {
             setMenu("shop");
           }}
         >
-          Shop{menu === "shop" ? <hr /> : <></>}
+          <Link to="/" style={{ textDecoration: "none", color: "#626262" }}>
+            Shop
+          </Link>
+          {menu === "shop" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
-            setMenu("men");
+            setMenu("mens");
           }}
         >
-          Men{menu === "men" ? <hr /> : <></>}
+          <Link to="/mens" style={{ textDecoration: "none", color: "#626262" }}>
+            Men
+          </Link>
+          {menu === "mens" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
-            setMenu("women");
+            setMenu("womens");
           }}
         >
-          Women {menu === "women" ? <hr /> : <></>}
+          <Link
+            to="/womens"
+            style={{ textDecoration: "none", color: "#626262" }}
+          >
+            Women
+          </Link>
+          {menu === "womens" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("kids");
           }}
         >
-          Kids{menu === "kids" ? <hr /> : <></>}
+          <Link to="/kids" style={{ textDecoration: "none", color: "#626262" }}>
+            Kids
+          </Link>
+          {menu === "kids" ? <hr /> : <></>}
         </li>
       </ul>
 
       <div className="nav-login-cart">
-        <button>Login</button>
-        <img src={cart_logo} alt="cart" />
+        <Link to="/login">
+          <button>Login</button>
+        </Link>
+        <Link to="/cart">
+          <img src={cart_logo} alt="cart" />
+        </Link>
         <div className="nav-cart-count">0</div>
       </div>
     </div>

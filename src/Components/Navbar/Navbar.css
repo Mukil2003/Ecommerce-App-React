@@ -4,7 +4,7 @@
   justify-content: space-around;
   padding: 16px;
   box-shadow: 0 1px 3px -2px #000;
-  height: 50px;
+  /* height: 50px; */
 }
 
 .nav-logo {
@@ -12,10 +12,10 @@
   align-items: center;
   gap: 10px;
 }
-
+/* 
 .nav-logo img {
   width: 45px;
-}
+} */
 
 .nav-logo p {
   color: #171717;
