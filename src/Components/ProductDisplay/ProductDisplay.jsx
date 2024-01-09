@@ -61,7 +61,7 @@ function ProductDisplay(props) {
 
         <button
           onClick={() => {
-            addToCart(product.id + 1);
+            addToCart(product.id);
           }}
         >
           ADD TO CART

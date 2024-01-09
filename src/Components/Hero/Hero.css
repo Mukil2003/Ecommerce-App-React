@@ -5,6 +5,16 @@
   display: flex;
 }
 
+.hero a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+}
+
+.hero a img {
+  margin-left: 10px;
+}
+
 .hero-left {
   display: flex;
   flex-direction: column;
@@ -42,7 +52,7 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  width: 270px;
+  width: 300px;
   /* padding: 10px; */
   height: 60px;
   border-radius: 75px;

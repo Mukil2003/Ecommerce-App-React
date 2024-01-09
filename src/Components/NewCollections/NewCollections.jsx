@@ -5,7 +5,7 @@ import Item from "../Item/Item";
 
 function NewCollections() {
   return (
-    <div className="new-collections">
+    <div className="new-collections" id="new">
       <h1>NEW COLLECTIONS</h1>
       <hr />
       <div className="collections">
